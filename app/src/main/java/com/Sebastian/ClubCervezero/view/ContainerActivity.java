@@ -4,8 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
+import com.Sebastian.ClubCervezero.MapsActivity;
 import com.Sebastian.ClubCervezero.R;
 import com.Sebastian.ClubCervezero.view.fragments.HomeFragment;
 import com.Sebastian.ClubCervezero.view.fragments.ProfileFragment;
@@ -13,13 +17,17 @@ import com.Sebastian.ClubCervezero.view.fragments.SearchFragment;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
-public class ContainerActivity extends AppCompatActivity {
+public class ContainerActivity extends AppCompatActivity  implements  View.OnClickListener {
+
+    Button btn_mapa;
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_container);
-
+        btn_mapa = findViewById(R.id.mapa);
+        btn_mapa.setOnClickListener(this);
         final BottomBar bottomBar = findViewById(R.id.bottombar);
 
         HomeFragment homeFragment = new HomeFragment();
@@ -78,5 +86,11 @@ public class ContainerActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+        startActivity(intent);
     }
 }
