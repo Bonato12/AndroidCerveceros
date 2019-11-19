@@ -19,15 +19,15 @@ import com.roughike.bottombar.OnTabSelectListener;
 
 public class ContainerActivity extends AppCompatActivity  implements  View.OnClickListener {
 
-    Button btn_mapa;
+   // Button btn_mapa;
 
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_container);
-        btn_mapa = findViewById(R.id.mapa);
-        btn_mapa.setOnClickListener(this);
+        //btn_mapa = findViewById(R.id.mapa);
+        //btn_mapa.setOnClickListener(this);
         final BottomBar bottomBar = findViewById(R.id.bottombar);
 
         HomeFragment homeFragment = new HomeFragment();

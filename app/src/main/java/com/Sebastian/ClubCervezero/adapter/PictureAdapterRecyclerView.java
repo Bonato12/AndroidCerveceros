@@ -2,6 +2,7 @@ package com.Sebastian.ClubCervezero.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.Sebastian.ClubCervezero.MapsActivity;
 import com.Sebastian.ClubCervezero.R;
 import com.Sebastian.ClubCervezero.model.Picture;
 import com.squareup.picasso.Picasso;
@@ -20,6 +22,8 @@ import com.Sebastian.ClubCervezero.view.fragments.PictureDetailActivity;
 
 
 import java.util.ArrayList;
+
+import static android.content.ContentValues.TAG;
 
 public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdapterRecyclerView.PictureViewHolder>{
 
@@ -49,11 +53,11 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PictureViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final PictureViewHolder holder, int position) {
 
         // aca trabajamos con la lista de objetos, y esto va a ir cacheando las cards que se van creando
 
-        Picture picture = pictures.get(position);
+        final Picture picture = pictures.get(position);
 
         // a traves del objeto holder, obtengo los datos
         // falta setear imagen
@@ -74,7 +78,11 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         holder.pictureCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity, PictureDetailActivity.class);
+
+                //Intent intent = new Intent(activity, PictureDetailActivity.class);
+                //activity.startActivity(intent);
+                Intent intent = new Intent(activity, MapsActivity.class);
+                intent.putExtra("int_value", -32.4812326);
                 activity.startActivity(intent);
             }
         });

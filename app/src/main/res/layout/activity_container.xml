@@ -15,16 +15,7 @@
         android:paddingBottom="60dp">
 
     </FrameLayout>
-    <Button
-        android:id="@+id/mapa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="20dp"
-        android:height="60dp"
-        android:textSize="@dimen/TextButtonLogin"
-        android:text="create acount"
-        android:textColor="@color/colorTextWhite"/>
+
 
     <include layout="@layout/bottom_bar"/>
 
