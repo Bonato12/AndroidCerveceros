@@ -36,7 +36,7 @@
                     android:id="@+id/mail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/app_logup_correo"
+                    android:hint="E-Mail"
                     android:imeOptions="actionNext"
                     android:singleLine="true"
                     android:textSize="@dimen/textInputLogin" />
@@ -84,7 +84,8 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/app_pass"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
                     android:imeOptions="actionNext"
                     android:singleLine="true"
                     android:textSize="@dimen/textInputLogin" />
@@ -99,7 +100,8 @@
                     android:id="@+id/password2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/app_logup_confirmarcontrasenia"
+                    android:inputType="textPassword"
+                    android:hint="@string/hint_confirm_password"
                     android:imeOptions="actionDone"
                     android:singleLine="true"
                     android:textSize="@dimen/textInputLogin" />
@@ -115,7 +117,7 @@
                 android:layout_marginBottom="20dp"
                 android:height="60dp"
                 android:textSize="@dimen/TextButtonLogin"
-                android:text="@string/app_logup_crearcuenta"
+                android:text="Crear Cuenta"
                 android:textColor="@color/colorTextWhite"/>
 
             <!--

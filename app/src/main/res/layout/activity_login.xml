@@ -49,7 +49,7 @@
                 android:id="@+id/mail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/app_user"
+                android:hint="@string/hint_user"
                 android:imeOptions="actionNext"
                 android:singleLine="true"
                 android:textColor="@color/colorTextWhite"
@@ -67,7 +67,7 @@
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/app_pass"
+                android:hint="@string/hint_password"
                 android:imeOptions="actionDone"
                 android:inputType="textPassword"
                 android:singleLine="true"
@@ -83,7 +83,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="20dp"
             android:height="60dp"
-            android:text="@string/app_login"
+            android:text="@string/text_button_login"
             android:textSize="@dimen/TextButtonLogin" />
 
         <LinearLayout
@@ -97,7 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
-                android:text="@string/app_logup1"
+                android:text="@string/dont_have_account"
                 android:textSize="15sp" />
 
             <TextView
@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onCreateAccount"
-                android:text="@string/app_logup2"
+                android:text="@string/create_here"
                 android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>

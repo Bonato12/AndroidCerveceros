@@ -66,10 +66,10 @@ public class HomeFragment extends Fragment {
         ArrayList<Picture> pictures = new ArrayList<>();
 
         pictures.add(new Picture("https://puntobiz.com.ar/data/img_cont/img_imagenes/img_gr/114292_75199.jpg",
-                "LAGASH", "hace 7 hs", "10 me gusta", "AAAAAAAAAAAAaaah!!!!!1111"));
+                "LAGASH", "hace 7 hs", "8 Likes", "2x1"));
 
-        pictures.add(new Picture("https://timedotcom.files.wordpress.com/2018/04/national-beer-day-ipa.jpg?w=800&quality=85",
-                "LA CERVECERIA", "hace 7 hs", "10 me gusta", "AAAAAAAAAAAAaaah!!!!!1111"));
+        pictures.add(new Picture("https://puntobiz.com.ar/data/img_cont/img_imagenes/img_gr/114292_75199.jpg",
+                "TRACTOR", "hace 7 hs", "10 Likes", "3x1"));
 
         return  pictures;
     }

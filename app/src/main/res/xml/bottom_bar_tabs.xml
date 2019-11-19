@@ -4,16 +4,16 @@
     <tab
         id="@+id/tab_home"
         icon="@drawable/ic_home"
-        title="@string/tab_home"
+        title="Home"
         barColorWhenSelected="@color/colorTextWhite" />
     <tab
         id="@+id/tab_search"
         icon="@drawable/ic_search"
-        title="@string/tab_search"
+        title="Search"
         barColorWhenSelected="@color/colorTextWhite"/>
     <tab
         id="@+id/tab_profile"
         icon="@drawable/ic_person"
-        title="@string/tab_profile"
+        title="Me"
         barColorWhenSelected="@color/colorTextWhite"/>
 </tabs>

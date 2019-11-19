@@ -1,21 +1,34 @@
 <resources>
-    <string name="app_name">Clubcervecero2</string>
-    <string name="app_user">User name</string>
-    <string name="app_pass">Password</string>
-    <string name="app_login">Log in</string>
-    <string name="app_logup1">not have an account?</string>
-    <string name="app_logup2">Create here</string>
-    <string name="app_logup_correo">E-Mail</string>
-    <string name="app_logup_nombre">Name</string>
-    <string name="app_logup_confirmarcontrasenia">Confirm password</string>
-    <string name="app_logup_crearcuenta">Confirm account</string>
-    <string name="app_toolbar_title_createacount">Create account</string>
-    <string name="title_activity_basic">BasicActivity</string>
-    <string name="tab_home">Inicio</string>
-    <string name="tab_search">Buscar</string>
-    <string name="tab_profile">Perfil</string>
 
+    <string name="app_name">Cerveceros</string>
+    <string name="title_activity_reference">ReferenceActivity</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_user_pass">Password</string>
+    <string name="text_button_login">Login</string>
+    <string name="dont_have_account">Don not account? </string>
+    <string name="create_here">Create here </string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_name">Nombre</string>
+    <string name="text_button_account">Unete</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_user">Usuario</string>
+    <string name="hint_confirm_password">Confirme Password</string>
+    <string name="text_button_ceateaccount">Unete</string>
+    <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
+    <string name="username_card">LAGASH</string>
+    <string name="firstword_card">Hace 4 dias</string>
+    <string name="likenumber_card">10 Me gusta</string>
+    <string name="search_tab">Buscar</string>
+    <string name="home_tab">Home</string>
+    <string name="profile_tab">Yo</string>
+    <string name="title_activity_maps"></string>
+    <string name="app_toolbar_title_createacount"></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_picture_detail1">PictureDetailActivity</string>
+    <string name="secondword_detail">Me gusta</string>
+    <string name="text_detailimage">Cerveza Porter Vader</string>
+    <string name="textdetail_lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</string>
+    <string name="title_activity_picture_detail">PictureDetailActivity</string>
+
 </resources>

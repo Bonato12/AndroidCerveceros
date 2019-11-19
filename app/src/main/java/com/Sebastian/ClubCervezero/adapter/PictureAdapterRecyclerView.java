@@ -1,6 +1,7 @@
 package com.Sebastian.ClubCervezero.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.Sebastian.ClubCervezero.R;
 import com.Sebastian.ClubCervezero.model.Picture;
 import com.squareup.picasso.Picasso;
+import com.Sebastian.ClubCervezero.view.fragments.PictureDetailActivity;
+
 
 import java.util.ArrayList;
 
@@ -64,6 +67,17 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         //Picasso.get().load(picture.getPicture()).into(holder.pictureCard);
         Picasso.with(activity).load(picture.getPicture()).error(R.drawable.ic_home).into(holder.pictureCard);
         // con la version 2.5.2 de picasso se usa with(activity) y no get()
+        Picasso.with(activity).load(picture.getPicture()).into(holder.pictureCard);
+
+        // utilizamos el objeto holder, pasa el parametro
+        //hacemos clickelable la card
+        holder.pictureCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity, PictureDetailActivity.class);
+                activity.startActivity(intent);
+            }
+        });
 
 
 
@@ -77,8 +91,8 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
     }
 
 
-    // ESTO VA EN OTRO ARCHIVO...
-
+    // esta es la clase inner, que trabaja todos los view de las tarjetas
+    // Esta clase  PictureViewHolder trabaja con todos los view de las cardView que la componen
     public class PictureViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView pictureCard;
@@ -86,7 +100,7 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         private TextView timeCard;
         private TextView promocionCard;
         private TextView likesCard;
-        private CheckBox likeCheckCard;
+       // private CheckBox likeCheckCard;
 
 
         public PictureViewHolder(@NonNull View itemView) {
@@ -99,7 +113,7 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
             timeCard = itemView.findViewById(R.id.timeCard);
             promocionCard = itemView.findViewById(R.id.promocionCard);
             likesCard = itemView.findViewById(R.id.likesCard);
-            likeCheckCard = itemView.findViewById(R.id.likeCheckCard);
+           // likeCheckCard = itemView.findViewById(R.id.likeCheckCard);
 
 
         }
