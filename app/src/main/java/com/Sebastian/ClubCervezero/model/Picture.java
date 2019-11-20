@@ -3,13 +3,17 @@ package com.Sebastian.ClubCervezero.model;
 public class Picture {
 
     private String picture, userName, time, likesNumber, promocion;
+    private double longitud, latitud;
 
-    public Picture(String picture, String userName, String time, String likesNumber, String promocion) {
+    public Picture(String picture, String userName, String time, String likesNumber, String promocion, double latitud, double longitud) {
         this.picture = picture;
         this.userName = userName;
         this.time = time;
         this.likesNumber = likesNumber;
         this.promocion = promocion;
+        this.latitud = latitud;
+        this.longitud = longitud;
+
     }
 
     public String getPicture() {
@@ -50,5 +54,21 @@ public class Picture {
 
     public void setPromocion(String promocion) {
         this.promocion = promocion;
+    }
+
+    public double getLongitud() {
+        return longitud;
+    }
+
+    public void setLongitud(double longitud) {
+        this.longitud = longitud;
+    }
+
+    public double getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(double latitud) {
+        this.latitud = latitud;
     }
 }

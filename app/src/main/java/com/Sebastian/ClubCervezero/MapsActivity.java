@@ -2,6 +2,7 @@ package com.Sebastian.ClubCervezero;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -43,9 +44,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        LatLng location = new LatLng(-32.4812326, -58.2401659);
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        Bundle extra1 = getIntent().getExtras();
+        double latitud = extra1.getDouble("latitud");
+        double longitud = extra1.getDouble("longitud");
+        LatLng location = new LatLng(latitud,longitud);
         mMap.addMarker(new MarkerOptions().position(location).title("TRACTOR"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(location));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 16));
 
     }
 }
