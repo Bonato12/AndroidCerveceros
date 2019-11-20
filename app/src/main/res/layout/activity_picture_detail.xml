@@ -53,17 +53,28 @@
             android:orientation="vertical"
             android:paddingTop="@dimen/activity_horizontal_margin">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/userNameDetail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/username_detail"
-                android:text="LAGASH"
+                android:text=""
                 android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:textColor="@color/colorBlack"
+                android:drawableRight="@drawable/ic_place_red"
+
                 />
+
+
+            </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -73,20 +84,26 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_vertical_margin">
 
+
+
                 <TextView
                     android:id="@+id/userLikeDetail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/textsize_detail"
-                    android:text="10"
+                    android:text=""
                     />
+
+
+
+
 
                 <TextView
                     android:id="@+id/secondWordDetail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/seconddetail"
-                    android:text="@string/secondword_detail"
+                    android:text=""
                     android:layout_marginLeft="@dimen/margin_detailsecond"
                     android:textColor="@color/colorBlack"
 
@@ -127,7 +144,5 @@
                 />
 
         </LinearLayout>
-
-
     </androidx.core.widget.NestedScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

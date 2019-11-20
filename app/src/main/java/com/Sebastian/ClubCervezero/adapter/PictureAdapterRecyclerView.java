@@ -81,10 +81,21 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
 
                 //Intent intent = new Intent(activity, PictureDetailActivity.class);
                 //activity.startActivity(intent);
+                /*
                 Intent intent = new Intent(activity, MapsActivity.class);
                 intent.putExtra("latitud", picture.getLatitud());
                 intent.putExtra("longitud",picture.getLongitud());
                 activity.startActivity(intent);
+
+                 */
+                Intent intent = new Intent(activity, PictureDetailActivity.class);
+                intent.putExtra("titulo", picture.getUserName());
+                intent.putExtra("likes", picture.getLikesNumber());
+                intent.putExtra("latitud", picture.getLatitud());
+                intent.putExtra("longitud",picture.getLongitud());
+
+                activity.startActivity(intent);
+
             }
         });
 
