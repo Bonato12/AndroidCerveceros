@@ -82,8 +82,8 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
                 //Intent intent = new Intent(activity, PictureDetailActivity.class);
                 //activity.startActivity(intent);
                 Intent intent = new Intent(activity, MapsActivity.class);
-                intent.putExtra("latitud", -32.4812326);
-                intent.putExtra("longitud",-58.2401659);
+                intent.putExtra("latitud", picture.getLatitud());
+                intent.putExtra("longitud",picture.getLongitud());
                 activity.startActivity(intent);
             }
         });
