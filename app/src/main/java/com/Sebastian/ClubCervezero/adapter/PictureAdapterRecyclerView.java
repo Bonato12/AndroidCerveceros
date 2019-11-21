@@ -90,6 +90,7 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
                  */
                 Intent intent = new Intent(activity, PictureDetailActivity.class);
                 intent.putExtra("titulo", picture.getUserName());
+                intent.putExtra("descripcion", picture.getDescripcion());
                 intent.putExtra("likes", picture.getLikesNumber());
                 intent.putExtra("latitud", picture.getLatitud());
                 intent.putExtra("longitud",picture.getLongitud());

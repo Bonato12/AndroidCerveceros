@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -79,6 +80,16 @@ public class CreateAccountActivity extends AppCompatActivity implements View.OnC
        // String userName = TextUsername.getText().toString().trim();
         String password = TextPassword.getText().toString();
         String password2 = TextPassword2.getText().toString().trim();
+
+        if(TextUtils.isEmpty(mail)){
+            Toast.makeText(this,"Mail required",Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        if(TextUtils.isEmpty(password)){
+            Toast.makeText(this,"Password required",Toast.LENGTH_LONG).show();
+            return;
+        }
 
         if (password.equals(password2)){
             firebaseAuth.createUserWithEmailAndPassword(mail, password)

@@ -117,6 +117,7 @@
                 android:background="@android:color/darker_gray"
                 />
 
+            <!--
             <TextView
                 android:id="@+id/titleImage"
                 android:layout_width="wrap_content"
@@ -129,13 +130,14 @@
                 android:textColor="@color/colorBlack"
 
                 />
+                -->
 
             <TextView
                 android:id="@+id/textContentImageDetail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/textsizeLorem"
-                android:text="@string/textdetail_lorem"
+                android:text=""
                 android:paddingTop="@dimen/paddin_vertical_detail"
                 android:paddingLeft="@dimen/padding_vertical_detail"
                 android:paddingRight="@dimen/paddin_vertical_detail"
